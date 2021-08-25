@@ -1,5 +1,6 @@
 package aftrica.semicolon.tddClass;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -26,9 +27,12 @@ public class AccountTest {
         System.out.println(ehigieBalance);
         System.out.println(janetBalance);
 
+    }
 
-
-
-
+    @Test
+    @DisplayName("User cannot deposit negative money")
+    public void testThatUserCannotDepositNegativeMoney(){
+        Account account = new Account();
+        
     }
 }
